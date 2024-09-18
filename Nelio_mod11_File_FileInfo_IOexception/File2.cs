@@ -7,7 +7,7 @@ string path = @"c:\temp\file1.txt";
 FileStream fs = null;
 StreamReader sr = null;
 try {
-fs = new FileStream(path, FileMode.Open); // File.OpenRead(path);
+fs = new FileStream(path, FileMode.Open); // File.OpenRead(path); //instanciando o FileStream  //TipoenumeradoFileMode no construtor 
 sr = new StreamReader(fs);
 string line = sr.ReadLine();
 Console.WriteLine(line);
